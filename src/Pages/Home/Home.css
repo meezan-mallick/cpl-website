@@ -1,0 +1,418 @@
+.home-wrapper{
+    width: 100%;
+        background-color: #071026;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        overflow-x: hidden;
+        gap: 3vh;
+}
+
+/* Top Image */
+.top-img {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top-img img {
+    height: 33vw;
+    /* width: 86vw; */
+}
+
+#hero_bg_desktop{
+    display: block;
+}
+#hero_bg_mobile{
+    display: none;
+}
+
+/* -------- */
+
+
+
+
+/* About CPL */
+.about-cpl {
+    height: 70vh;
+    width: 97vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cpl-details {
+    padding: 1vw;
+    padding-left: 6vw;
+    width: 40vw;
+}
+
+.cpl-details h1 {
+    font-weight: 1000;
+    letter-spacing: 0.1vw;
+    color: white;
+}
+
+.cpl-details p {
+    word-spacing: 0.1vw;
+    color: white;
+}
+
+.cpl-teams {
+    margin-right: 3vw;
+    overflow: hidden;
+    position: relative;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 100%;
+}
+
+.cpl-teams img {
+    position: absolute;
+    height: 8vw;
+    filter: drop-shadow(0em 0em 1.2em rgba(0, 180, 200, 0.458));
+
+}
+
+.cpl-teams img:nth-child(2) {
+    height: 6vw;
+}
+
+.cpl-teams img:nth-child(4) {
+    height: 9vw;
+}
+
+.t-1 {
+    top: 10%;
+    left: 14%;
+}
+
+.t-2 {
+    top: 11%;
+    left: 53%;
+}
+
+.t-3 {
+    top: 40%;
+    left: 2%;
+}
+
+.t-4 {
+    top: 35%;
+    left: 32%;
+}
+
+.t-5 {
+    top: 34%;
+    left: 62%;
+}
+
+.t-6 {
+    top: 64%;
+    left: 25%;
+}
+
+.t-7 {
+    top: 59%;
+    left: 53%;
+}
+
+/* ---------------------------------------- */
+
+/* mid Image */
+.mid-img {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.mid-img img:nth-of-type(1) {
+    display: block;/* desktop */
+}
+
+.mid-img img:nth-of-type(2) {
+    display: none;/* mobile */
+}
+
+.mid-img img{
+    height: 95vh;
+}
+
+
+/* -------- */
+
+/* Roadmap Timeline */
+.roadmap-timeline {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.bg-img {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+}
+
+.bg-img img:first-child {
+    position: absolute;
+    height: 40vw;
+    bottom: 16vh;
+    left: 10vh;
+}
+
+.bg-img img:last-child {
+    position: absolute;
+    top: 5vh;
+    height: 90%;
+    /* width: 60%; */
+    right: 1vh;
+}
+
+.roadmap-data h1 {
+    text-align: center;
+}
+
+.roadmap-data h1 b {
+    font-weight: 1000;
+    letter-spacing: 0.2vw;
+
+}
+
+.roadmap-data table {
+    border-collapse: collapse;
+}
+
+.roadmap-data table tr td:first-child {
+    border-right: 1px solid white;
+    padding-right: 3vh;
+}
+
+.roadmap-data table tr td:last-child {
+    border-left: 1px solid white;
+    padding-left: 3vh;
+}
+
+.roadmap-data table tr td {
+    position: relative;
+}
+
+.roadmap-data table tr td p {
+    margin: 2.5vh 0vh;
+    height: 6vh;
+    width: 25vh;
+    border-radius: 7px;
+    padding: 0vw 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.round-ball {
+
+    position: absolute;
+    width: 1.7vh;
+    height: 1.7vh;
+    border-radius: 1000px;
+    background-color: #DB23FF;
+    outline: 1px solid #DFD3F3;
+    right: -3.2%;
+    top: 40%;
+
+}
+
+.t-l {
+    background: linear-gradient(#6A3BB8, #D525FB);
+}
+
+#youtube-embed{
+    height: 80vh;
+    width: 70vw;
+}
+
+
+@media (max-width:900px) {
+    .top-img{
+        margin-top: 2em;
+        /* background-color: lightblue; */
+        height: 60vh;
+    }
+    #hero_bg_desktop {
+        display: none;
+    }
+
+    #hero_bg_mobile {
+        display: block;
+        border-radius: 10px;
+    }
+
+    .top-img img {
+        height: 60vh;
+        /* width: 86vw; */
+    }
+
+
+    .about-cpl {
+        /* background-color: lightseagreen; */
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .cpl-details {
+        padding: 4vw;
+        width: 90%;
+        /* background-color: lightgreen; */
+    }
+    .cpl-details h1 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .cpl-details p {
+        font-size: 4vw;
+        padding-top: 10vw;
+        text-align: center;
+    }
+
+    /* TEAMS LOGOS */
+
+    .cpl-teams {
+        margin-right: 0vw; 
+        position: relative;
+        width: 80vw;
+        height: 100vh;
+        border-radius: 0%;
+    }
+   
+    .cpl-teams img {
+        position: absolute;
+        height: 23vw;
+    }
+
+    .cpl-teams img:nth-child(2) {
+        height: 21vw;
+    }
+    .cpl-teams img:nth-child(3) {
+        height: 22vw;
+    }
+    .cpl-teams img:nth-child(4) {
+        height: 27vw;
+    }
+    .cpl-teams img:nth-child(5) {
+        height: 22vw;
+    }
+
+
+    .t-1 {
+        top: 10%;
+        left: 3%;
+    }
+
+    .t-2 {
+        top: 11%;
+        left: 53%;
+    }
+
+    .t-3 {
+        top: 40%;
+        left: 0%;
+    }
+
+    .t-4 {
+        top: 35%;
+        left: 32%;
+    }
+
+    .t-5 {
+        top: 34%;
+        left: 68%;
+    }
+
+    .t-6 {
+        top: 70%;
+        left: 25%;
+    }
+
+    .t-7 {
+        top: 60%;
+        left: 57%;
+    }
+
+    /* mid image */
+    .mid-img img:nth-of-type(1) {
+        display: none;
+        /* desktop */
+    }
+
+    .mid-img img:nth-of-type(2) {
+        display: block;
+        /* mobile */
+    }
+
+    .mid-img img {
+        width: 80vw;
+        height: auto;
+        display: block;
+    }
+
+    .mid-img{
+       
+        height: auto;
+        /* background-color: red; */
+    }
+
+    /* Roadmap timeline */
+
+    .roadmap-timeline {
+        height: 80vh;
+        
+        /* background-color: lightblue; */
+       
+    }
+
+    .bg-img {
+        display: none;
+       
+    }
+
+   
+    .roadmap-data h1 {
+        text-align: center;font-size: 5vw;
+    }
+
+
+    .roadmap-data table tr td p {
+        margin: 2vh 0vh;
+        width: 18vh;
+        font-size: 3.8vw;
+    }   
+
+    .round-ball {
+        width: 1vh;
+        height: 1vh;
+        right: -3%;
+    }
+
+        #youtube-embed {
+            height: auto;
+            width: 85vw;
+        }
+}

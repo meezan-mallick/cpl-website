@@ -1,0 +1,122 @@
+.auction-wrapper {
+    width: 100%;
+    background-color: #071026;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* ------------------------------ Auction Menu         */
+.auction
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.auction {
+    width: 100vw;
+    padding-bottom: 30px;
+}
+
+.auctionmenu h1 {
+    font-size: 180%;
+   
+}
+
+
+/* Teams */
+.teams {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 0px;
+
+}
+
+.Team-box {
+
+    height: 50vh;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bgbox {
+    width: 350px;
+    height: 250px;
+    background-color: rgb(234, 0, 0);
+    align-items: center;
+    text-align: center;
+    margin-top: -30%;
+    border-radius: 0 0 50% 50%;
+}
+
+.Team-box img {
+    height: 10vw;
+    margin-top: 70px;
+
+}
+.Team-box h2{
+    margin-top: 50px;
+}
+
+@media (max-width:900px) {
+    .bgbox img{
+        width: 10em;
+        height: 10em;
+    }
+   
+
+    .Team-box{
+        width: 130px;
+        height: 30vh;
+    }
+    .Team-box img {
+        height: 30vw;
+        margin-top: 30px;
+
+    }
+
+    .Team-box h2 {
+        margin-top: 30px;
+        font-size: 5vw;
+    }
+
+    .bgbox {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(234, 0, 0);
+        align-items: center;
+        text-align: center;
+        margin-top: -40%;
+        border-radius: 0 0 50% 50%;
+    }
+
+    .hurricanes-logo{
+       height: 20vw !important;
+       width: auto !important;
+    margin-top: 50px !important;
+    }
+    .panther-logo{
+       height: 12vw !important;
+       width: auto !important;
+    margin-top: 60px !important;
+    }
+}

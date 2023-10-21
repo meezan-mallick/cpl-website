@@ -1,0 +1,207 @@
+.auction-wrapper{
+    width: 100%;
+        background-color: #071026;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        overflow-x: hidden;
+        color: white;
+}
+
+/* ------------------------------ Auction Menu         */
+.auction,
+.auctionmenu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.auction {
+    width: 100vw;
+    padding-bottom: 30px;
+}
+
+.auctionmenu {
+    margin-top: 20px;
+    width: 85vw;
+    padding: 0px 0px 30px 0px;
+    border-bottom: 1px solid #838383;
+}
+
+.auctionmenu h1 {
+    font-size: 180%;
+}
+
+.btns button {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    padding: 0.5em 0.8em;
+    border-radius: 0px 15px;
+    color: white;
+    transition: .3s;
+    
+
+}
+
+.btns button:nth-child(1),
+.btns button:hover {
+    font-weight: 900;
+    box-shadow: white 3px 4px 0px 1px;
+    
+}
+
+.btns {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px;
+    margin-top: 10px;
+}
+
+/* Teams */
+.teams {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 0px;
+
+}
+
+.Team {
+
+    height: 50vh;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 20px;
+}
+
+.Tdetails {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Tdetails img {
+    height: 5vw;
+    width: 10vh;
+    background-color: white;
+    border-radius: 100%;
+
+}
+
+.Tdetails p,
+.Tdetails h4 {
+    margin-top: -6px;
+}
+
+.Tplayer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+}
+
+.teams .Team:nth-child(1){
+    background: linear-gradient(#283665, #010F41);
+}
+.teams .Team:nth-child(2){
+    background: linear-gradient(#005D96, #0A2A3D);
+}
+.teams .Team:nth-child(3){
+    background: linear-gradient(#9E1F1B, #3C0604);
+}
+.teams .Team:nth-child(4){
+    background: linear-gradient(#5E2B88, #180428);
+}
+.teams .Team:nth-child(5){
+    background: linear-gradient(#8F1E1F, #4D0606);
+}
+.teams .Team:nth-child(6){
+    background: linear-gradient(#03346E, #011C3C);
+}
+.teams .Team:nth-child(7){
+    background: linear-gradient(#DB8216, #633B0B);
+}
+.teams .Team:nth-child(8){
+    background: linear-gradient(#DE2C26, #720602);
+}
+.teams .Team:nth-child(9){
+    background: linear-gradient(#60241B, #270500);
+}
+.teams .Team:nth-child(10){
+    background: linear-gradient(#A01F23, #340305);
+}
+.teams .Team:nth-child(11){
+    background: linear-gradient(#BC3A10, #350D00);
+}
+.teams .Team:nth-child(12){
+    background: linear-gradient(#E29C0E, #614100);
+}
+
+/* Highest bids */
+.topbids-table-wrapper{
+    overflow-x: auto;
+    margin-top: 3vw;
+}
+
+.topbids-table-wrapper table tr td,th{ 
+    /* background-color: red; */
+    text-align: center;
+    padding:1vw 4vw;
+    font-size: 1.5vw;
+}
+.topbids-table-wrapper table{ 
+    border: 1px solid white;
+    padding: 2vw;
+    border-radius: 10px;
+}
+.topbids-table-wrapper table thead tr{ 
+    background-color: rgba(94, 72, 150, 0.495);
+
+}
+.topbids-table-wrapper table tr{ 
+    background-color: rgba(55, 14, 157, 0.495);
+
+}
+
+@media (max-width:900px){
+    .Tdetails img{
+        width: 7em;
+        height:7em;
+    }
+       
+    .btns button{
+        font-size:4vw;
+        border-width: 1px;
+        border-radius: 2px;
+    }
+
+    /* .Team{
+        width: 159px;
+    } */
+
+}
