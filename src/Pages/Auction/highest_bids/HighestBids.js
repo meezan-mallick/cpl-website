@@ -9,12 +9,10 @@ const HighestBids = () => {
         {/* Auction Menu */}
         <div className="auction">
           <div className="auctionmenu">
-            <h1>CPL AUCTION | 2023</h1>
+            <h1>CPL AUCTION Top 10 Highest Bids ( 2023 )</h1>
           </div>
         </div>
         {/* END of Auction menu */}
-
-        <h1>Top 10 Highest Bids</h1>
 
         <div className="topbids-table-wrapper">
           <table>

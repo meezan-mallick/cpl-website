@@ -95,7 +95,7 @@ const Nav = () => {
         </div>
 
         <div className="logo">
-          <img style={{ height: "4vw" }} src={vibraniumlogo} alt="cpl logo" />
+          <img style={{ height: "3vw" }} src={vibraniumlogo} alt="cpl logo" />
         </div>
       </div>
     </>
