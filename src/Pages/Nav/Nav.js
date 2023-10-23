@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/images/nav/logo.png";
 import hamburgericon from "../Assets/images/nav/menu.png";
+import vibraniumlogo from "../Assets/images/nav/vibranium.png";
 import closeicon from "../Assets/images/nav/closeicon.png";
 import { useEffect } from "react";
 const Nav = () => {
@@ -38,17 +39,21 @@ const Nav = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/auction">Auction</Link>
+              <Link to="/highestbids">Auction</Link>
             </li>
             <li>
               <Link to="/teams">Teams</Link>
             </li>
             <li>
-              <Link to="/">About us</Link>
+              <Link to="/">Schedules</Link>
             </li>
             <li>
               <Link to="/">Contact</Link>
             </li>
+            <li>
+              <Link to="/">Sponsors</Link>
+            </li>
+            <li></li>
           </ul>
         </div>
         <div className="mobile-menu nav-links">
@@ -87,6 +92,10 @@ const Nav = () => {
               <Link to="/">Contact</Link>
             </li>
           </ul>
+        </div>
+
+        <div className="logo">
+          <img style={{ height: "4vw" }} src={vibraniumlogo} alt="cpl logo" />
         </div>
       </div>
     </>

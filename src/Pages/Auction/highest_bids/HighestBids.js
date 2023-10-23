@@ -10,15 +10,6 @@ const HighestBids = () => {
         <div className="auction">
           <div className="auctionmenu">
             <h1>CPL AUCTION | 2023</h1>
-            <div className="btns">
-              <Link to="/auction">
-                <button>TEAMS</button>
-              </Link>
-              <Link to="/highestbids">
-                <button>TOP BUYS</button>
-              </Link>
-              <button>UNSOLD</button>
-            </div>
           </div>
         </div>
         {/* END of Auction menu */}

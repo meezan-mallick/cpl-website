@@ -13,7 +13,7 @@
     list-style: none;
     display: flex;
     gap:4vw;
-    margin-left: 36vw;
+    margin-left: 3vw;
 }
 
 .header a{
@@ -28,7 +28,6 @@
 
 .desktop-menu{
     display: block;
-    float: right;
 }
 .mobile-menu, .menu-mobile ul, .closeicon, .mobile-menu div{
     display: none;

@@ -2,13 +2,20 @@ import React from "react";
 import "./Home.css";
 import icc from "../Assets/images/home/icc.png";
 import iccmobile from "../Assets/images/home/hero_bg_mobile.webp";
+
 import empirelogo from "../Assets/images/teams/empire.png";
 import hurricaneslogo from "../Assets/images/teams/hurricaneslogo.png";
 import blasterslogo from "../Assets/images/teams/blasters.png";
 import royalslogo from "../Assets/images/teams/royals.png";
+import starslogo from "../Assets/images/teams/start.png";
 import falconslogo from "../Assets/images/teams/falcons.png";
+import pantherslogo from "../Assets/images/teams/panther.png";
 import strikerslogo from "../Assets/images/teams/strikers.png";
+import superkingslogo from "../Assets/images/teams/super kings.png";
 import wolveslogo from "../Assets/images/teams/wolves.png";
+import titanslogo from "../Assets/images/teams/titans.png";
+import knightslogo from "../Assets/images/teams/the knights.png";
+
 import midimage from "../Assets/images/home/mid_image.png";
 import midimagemobile from "../Assets/images/home/mid_image_mobile.png";
 import bghelmet from "../Assets/images/home/helmet.png";
@@ -26,31 +33,49 @@ const Home = () => {
         {/* -------------------------------------- */}
 
         {/* <!-- About CPL  --> */}
+        <div className="cpl-teams">
+          <img className="t-2" src={hurricaneslogo} alt="Hurricans" />
+          <img className="t-1" src={empirelogo} alt="Empire" />
+          <img className="t-4" src={royalslogo} alt="Royals" />
+          <img className="t-3" src={starslogo} alt="blasters" />
+          <img className="t-3" src={blasterslogo} alt="blasters" />
+        </div>
         <div className="about-cpl">
           <div className="cpl-details">
             <h1>
-              Unleash the Power of Cricketing Passion: Join the Ultimate
-              <br></br> Battle OF CPL
+              Unleash the Power of Cricketing Passion: Join the Ultimate Battle
+              OF CPL
             </h1>
 
             <p>
               CPL is an exciting event that brings together passionate cricket
-              enthusiasts from various colleges to showcase their skills and
+              enthusiasts from our department to showcase their skills and
               compete for the ultimate glory. This tournament serves as a
               platform for young and talented cricketers to exhibit their
-              talent, foster sportsmanship, and create lifelong memories.
+              talent, foster sportsmanship, and create lifelong memories of
+              their college time
             </p>
           </div>
-
-          <div className="cpl-teams">
-            <img className="t-1" src={empirelogo} alt="Empire" />
-            <img className="t-2" src={hurricaneslogo} alt="Hurricans" />
-            <img className="t-3" src={blasterslogo} alt="blasters" />
-            <img className="t-4" src={royalslogo} alt="Royals" />
-            <img className="t-5" src={falconslogo} alt="Falcons" />
-            <img className="t-6" src={strikerslogo} alt="Strikers" />
-            <img className="t-7" src={wolveslogo} alt="Wolves" />
+          <div>
+            <h2 style={{ textAlign: "center", color: "white" }}>
+              Finalist Teams (2022)
+            </h2>
+            <div className="cpl-teams">
+              <div>
+                <img className="t-1" src={titanslogo} alt="Empire" />
+              </div>
+              <div>
+                <img className="t-1" src={knightslogo} alt="Empire" />
+              </div>
+            </div>
           </div>
+        </div>
+        <div className="cpl-teams">
+          <img className="t-1" src={pantherslogo} alt="Empire" />
+          <img className="t-2" src={falconslogo} alt="Hurricans" />
+          <img className="t-3" src={strikerslogo} alt="blasters" />
+          <img className="t-4" src={superkingslogo} alt="Royals" />
+          <img className="t-5" src={wolveslogo} alt="Falcons" />
         </div>
         {/* -- -------------------------------- -- */}
 
@@ -109,7 +134,7 @@ const Home = () => {
               </tr>
               <tr>
                 <td>
-                  <p className="pt-left">18 Nov 2023</p>
+                  <p className="pt-left">06 Nov 2023</p>
                   <div className="round-ball"></div>
                 </td>
                 <td>

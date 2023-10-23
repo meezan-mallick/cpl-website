@@ -79,8 +79,8 @@ const Footer = () => {
         </div>
         <div className="copy-right">
           <p>
-            Copyright © CPL 2023 All Rights Reserved. | Developed by Meezan
-            Mallick
+            Copyright © CPL {new Date().getFullYear()} All Rights Reserved. |
+            Developed by Meezan Mallick
           </p>
         </div>
       </div>
