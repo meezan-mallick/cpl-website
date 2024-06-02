@@ -40,7 +40,7 @@
 
 /* About CPL */
 .about-cpl {
-    height: 50vh;
+    height: 70vh;
     width: 97vw;
     display: flex;
     flex-direction: row;
@@ -71,47 +71,14 @@
 }
 
 .cpl-teams img {
-    height: 8vw;
-    margin: 0px 3vw;
+    height: 14vw;
+    margin: 0px 1vw;
     filter: drop-shadow(0em 0em 1.2em rgba(0, 180, 200, 0.458));
 
 }
 
-.cpl-teams img:nth-child(2) {
-   height: 13vh;
-}
 
-.cpl-teams img:nth-child(4) {
-   
-}
 
-.t-1 {
-    
-}
-
-.t-2 {
-    
-}
-
-.t-3 {
-   
-}
-
-.t-4 {
-   
-}
-
-.t-5 {
-  
-}
-
-.t-6 {
-  
-}
-
-.t-7 {
-   
-}
 
 /* ---------------------------------------- */
 

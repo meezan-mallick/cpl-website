@@ -1,0 +1,17 @@
+#sponsor_desktop {
+    display: block;
+}
+
+#sponsor_mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    #sponsor_desktop {
+        display: none;
+    }
+
+    #sponsor_mobile {
+        display: block;
+    }
+}

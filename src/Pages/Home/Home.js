@@ -3,19 +3,6 @@ import "./Home.css";
 import icc from "../Assets/images/home/icc.png";
 import iccmobile from "../Assets/images/home/hero_bg_mobile.webp";
 
-import empirelogo from "../Assets/images/teams/empire.png";
-import hurricaneslogo from "../Assets/images/teams/hurricaneslogo.png";
-import blasterslogo from "../Assets/images/teams/blasters.png";
-import royalslogo from "../Assets/images/teams/royals.png";
-import starslogo from "../Assets/images/teams/start.png";
-import falconslogo from "../Assets/images/teams/falcons.png";
-import pantherslogo from "../Assets/images/teams/panther.png";
-import strikerslogo from "../Assets/images/teams/strikers.png";
-import superkingslogo from "../Assets/images/teams/super kings.png";
-import wolveslogo from "../Assets/images/teams/wolves.png";
-import titanslogo from "../Assets/images/teams/titans.png";
-import knightslogo from "../Assets/images/teams/the knights.png";
-
 import midimage from "../Assets/images/home/mid_image.png";
 import midimagemobile from "../Assets/images/home/mid_image_mobile.png";
 import bghelmet from "../Assets/images/home/helmet.png";
@@ -33,22 +20,31 @@ const Home = () => {
         {/* -------------------------------------- */}
 
         {/* <!-- About CPL  --> */}
-        <div className="cpl-teams">
-          <img className="t-2" src={hurricaneslogo} alt="Hurricans" />
-          <img className="t-1" src={empirelogo} alt="Empire" />
-          <img className="t-4" src={royalslogo} alt="Royals" />
-          <img className="t-3" src={starslogo} alt="blasters" />
-          <img className="t-3" src={blasterslogo} alt="blasters" />
-        </div>
+        {/* <div className="cpl-teams">
+          <img src={"/assets/teams/capitals.png"} alt="capital logo" />
+          <img src={"/assets/teams/Indians.png"} alt="indians logo" />
+          <img src={"/assets/teams/Kings_XI.png"} alt="kings logo" />
+          <img
+            style={{ height: "12vw", marginTop: "1vw" }}
+            src={"/assets/teams/Knight_Riders.png"}
+            alt="knights logo"
+          />
+          <img
+            style={{ height: "12vw", marginTop: "1vw" }}
+            src={"/assets/teams/Royal_Challengers.png"}
+            alt="royal challengers logo"
+          />
+        </div> */}
+
         <div className="about-cpl">
           <div className="cpl-details">
             <h1>
               Unleash the Power of Cricketing Passion: Join the Ultimate Battle
-              OF CPL
+              OF GUPL
             </h1>
 
             <p>
-              CPL is an exciting event that brings together passionate cricket
+              GUPL is an exciting event that brings together passionate cricket
               enthusiasts from our department to showcase their skills and
               compete for the ultimate glory. This tournament serves as a
               platform for young and talented cricketers to exhibit their
@@ -57,26 +53,24 @@ const Home = () => {
             </p>
           </div>
           <div>
-            <h2 style={{ textAlign: "center", color: "white" }}>
-              Finalist Teams (2022)
-            </h2>
-            <div className="cpl-teams">
-              <div>
-                <img className="t-1" src={titanslogo} alt="Empire" />
-              </div>
-              <div>
-                <img className="t-1" src={knightslogo} alt="Empire" />
-              </div>
-            </div>
+            <img
+              style={{ height: "34vw", marginRight: "7vw" }}
+              src={"/assets/home/all_team_group.png"}
+              alt="Royals logo"
+            />
           </div>
         </div>
-        <div className="cpl-teams">
-          <img className="t-1" src={pantherslogo} alt="Empire" />
-          <img className="t-2" src={falconslogo} alt="Hurricans" />
-          <img className="t-3" src={strikerslogo} alt="blasters" />
-          <img className="t-4" src={superkingslogo} alt="Royals" />
-          <img className="t-5" src={wolveslogo} alt="Falcons" />
-        </div>
+        {/* <div className="cpl-teams">
+          <img src={"/assets/teams/Royals.png"} alt="Royals logo" />
+          <img src={"/assets/teams/Sunrisers.png"} alt="Sunrisers logo" />
+          <img src={"/assets/teams/Super_giants.png"} alt="Super_giants logo" />
+          <img src={"/assets/teams/Super_Kings.png"} alt="Super_Kings logo" />
+          <img
+            style={{ height: "10vw", marginTop: "1vw" }}
+            src={"/assets/teams/Titans.png"}
+            alt="Titans logo"
+          />
+        </div> */}
         {/* -- -------------------------------- -- */}
 
         {/* <!-- Mid Photo --> */}

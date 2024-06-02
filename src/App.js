@@ -4,8 +4,10 @@ import Footer from "./Pages/Footer/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Teams from "./Pages/Teams/Teams";
-import Auction from "./Pages/Auction/Auction";
 import HighestBids from "./Pages/Auction/highest_bids/HighestBids";
+import Fixture from "./Pages/fixtures/Fixture";
+import Sponsors from "./Pages/sponsors/Sponsors";
+import Teamsdetails from "./Pages/TeamsDetails/Teamsdetails";
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/teams" element={<Teams />} />
-            <Route path="/auction" element={<Auction />} />
             <Route path="/highestbids" element={<HighestBids />} />
+            <Route path="/schedules" element={<Fixture />} />
+            <Route path="/sponsors" element={<Sponsors />} />
+            <Route path="/teams/:id" element={<Teamsdetails />} />
           </Routes>
         </div>
       </Router>

@@ -1,17 +1,6 @@
 import React from "react";
-import blasters from "../Assets/images/teams/blasters.png";
-import falcons from "../Assets/images/teams/falcons.png";
-import hurricanes from "../Assets/images/teams/hurricaneslogo.png";
-import panther from "../Assets/images/teams/panther.png";
-import royals from "../Assets/images/teams/royals.png";
-import stars from "../Assets/images/teams/start.png";
-import strikers from "../Assets/images/teams/strikers.png";
-import super_kings from "../Assets/images/teams/super kings.png";
-import empire from "../Assets/images/teams/empire.png";
-import knights from "../Assets/images/teams/the knights.png";
-import titans from "../Assets/images/teams/titans.png";
-import wolves from "../Assets/images/teams/wolves.png";
 import "./teams.css";
+import { NavLink } from "react-router-dom";
 
 const Teams = () => {
   return (
@@ -20,108 +9,157 @@ const Teams = () => {
         {/* Auction Menu */}
         <div className="auction">
           <div className="auctionmenu">
-            <h1>CPL TEAMS | 2023</h1>
+            <h1>GUPL TEAMS | 2024</h1>
           </div>
         </div>
         {/* END of Auction menu */}
 
         {/* Teams Details */}
         <div className="teams">
-          <div style={{ backgroundColor: "#283665" }} className="Team-box">
-            <div style={{ backgroundColor: "#CB2031" }} className="bgbox">
-              <img src={knights} alt="KNIGHTS" />
-            </div>
-            <h2>KNIGHTS</h2>
+          <div>
+            <NavLink to="/teams/capitals">
+              <img
+                alt="capitals card"
+                src={"/assets/teams/cards/capital_card.png"}
+              />
+            </NavLink>
+            <NavLink to="/teams/indians">
+              <img
+                alt="indians card"
+                src={"/assets/teams/cards/indians_card.png"}
+              />
+            </NavLink>
+            <NavLink to="/teams/Kings_XI">
+              <img
+                alt="kings xi card"
+                src={"/assets/teams/cards/kings_xi_card.png"}
+              />
+            </NavLink>
+            <NavLink to="/teams/KnightRiders">
+              <img
+                alt="knights card"
+                src={"/assets/teams/cards/knights_card.png"}
+              />
+            </NavLink>
+            <NavLink to="/teams/Royal_Challengers">
+              <img
+                alt="Royal_Challengers card"
+                src={"/assets/teams/cards/royal_challengers_card.png"}
+              />
+            </NavLink>
+            <NavLink to="/teams/Royals">
+              <img
+                alt="Royals card"
+                src={"/assets/teams/cards/royals_card.png"}
+              />
+            </NavLink>
+            <NavLink to="/teams/Sunrisers">
+              <img
+                alt="Sunrisers card"
+                src={"/assets/teams/cards/sunrisers_card.png"}
+              />
+            </NavLink>
+            <NavLink to="/teams/Super_giants">
+              <img
+                alt="Super_giants card"
+                src={"/assets/teams/cards/supergiants_card.png"}
+              />
+            </NavLink>
+            <NavLink to="/teams/Super_Kings">
+              <img
+                alt="Super_Kings card"
+                src={"/assets/teams/cards/superkings_card.png"}
+              />
+            </NavLink>
+            <NavLink to="/teams/Titans">
+              <img
+                alt="Titans card"
+                src={"/assets/teams/cards/titans_card.png"}
+              />
+            </NavLink>
           </div>
 
-          <div style={{ backgroundColor: "#005D96" }} className="Team-box">
-            <div
-              style={{ backgroundColor: "#E0EDFF" }}
-              className="bgbox secImg"
-            >
-              <img
-                className="hurricanes-logo"
-                src={hurricanes}
-                alt="hurricanes"
-              />
+          {/* <NavLink to="/teams/indians">
+            <div style={{ backgroundColor: "#133266" }} className="Team-box">
+              <div style={{ backgroundColor: "#2d6ab1" }} className="bgbox">
+                <img src={"/assets/teams/Indians.png"} alt="capitals" />
+              </div>
+              <h2>INDIANS</h2>
             </div>
-            <h2>HURRICANES</h2>
-          </div>
-          <div style={{ backgroundColor: "#011847" }} className="Team-box">
-            <div style={{ backgroundColor: "#DE2C26" }} className="bgbox">
-              <img src={empire} alt="EMPIRE" />
+          </NavLink>
+          <NavLink to="/teams/Kings_XI">
+            <div style={{ backgroundColor: "#283766" }} className="Team-box">
+              <div style={{ backgroundColor: "#d71920" }} className="bgbox">
+                <img src={"/assets/teams/Kings_XI.png"} alt="capitals" />
+              </div>
+              <h2>KINGS XI</h2>
             </div>
-            <h2>EMPIRE</h2>
-          </div>
-          <div style={{ backgroundColor: "#5E2B88" }} className="Team-box">
-            <div style={{ backgroundColor: "#DCF73B" }} className="bgbox">
-              <img src={royals} alt="ROYALS" />
+          </NavLink>
+
+          <NavLink to="/teams/KnightRiders">
+            <div style={{ backgroundColor: "#271f4a" }} className="Team-box">
+              <div style={{ backgroundColor: "#ecc542" }} className="bgbox">
+                <img src={"/assets/teams/Knight_Riders.png"} alt="KNIGHTS" />
+              </div>
+              <h2>KNIGHT RIDERS</h2>
             </div>
-            <h2>ROYALS</h2>
-          </div>
-          <div style={{ backgroundColor: "#9C2221" }} className="Team-box">
-            <div
-              style={{ backgroundColor: "#452929" }}
-              className="bgbox secImg"
-            >
-              <img className="hurricanes-logo" src={blasters} alt="BLASTERS" />
+          </NavLink>
+
+          <NavLink to="/teams/Royal_Challengers">
+            <div style={{ backgroundColor: "#601f23" }} className="Team-box">
+              <div style={{ backgroundColor: "#2b2a29" }} className="bgbox">
+                <img
+                  src={"/assets/teams/Royal_Challengers.png"}
+                  alt="capitals"
+                />
+              </div>
+              <h2>ROYAL CHALLENGERS</h2>
             </div>
-            <h2>BLASTERS</h2>
-          </div>
-          <div style={{ backgroundColor: "#03346E" }} className="Team-box">
-            <div
-              style={{ backgroundColor: "#ECF9FF" }}
-              className="bgbox secImg"
-            >
-              <img className="hurricanes-logo" src={stars} alt="STARS" />
+          </NavLink>
+          <NavLink to="/teams/Royals">
+            <div style={{ backgroundColor: "#043268" }} className="Team-box">
+              <div style={{ backgroundColor: "#eb83b5" }} className="bgbox">
+                <img src={"/assets/teams/Royals.png"} alt="capitals" />
+              </div>
+              <h2>Royals</h2>
             </div>
-            <h2>STARS</h2>
-          </div>
-          <div style={{ backgroundColor: "#DB8216" }} className="Team-box">
-            <div
-              style={{ backgroundColor: "#E8E9FF" }}
-              className="bgbox secImg panther"
-            >
-              <img className="panther-logo" src={panther} alt="PANTHERS" />
+          </NavLink>
+          <NavLink to="/teams/Sunrisers">
+            <div style={{ backgroundColor: "#702324" }} className="Team-box">
+              <div style={{ backgroundColor: "#f26522" }} className="bgbox">
+                <img src={"/assets/teams/Sunrisers.png"} alt="capitals" />
+              </div>
+              <h2>SUNRISERS</h2>
             </div>
-            <h2>PANTHERS</h2>
-          </div>
-          <div style={{ backgroundColor: "#DE2C26" }} className="Team-box">
-            <div style={{ backgroundColor: "#FCFFEB" }} className="bgbox">
-              <img src={falcons} alt="FALCONS" />
+          </NavLink>
+          <NavLink to="/teams/Super_giants">
+            <div style={{ backgroundColor: "#0248bc" }} className="Team-box">
+              <div style={{ backgroundColor: "#ffffff" }} className="bgbox">
+                <img src={"/assets/teams/Super_giants.png"} alt="capitals" />
+              </div>
+              <h2>SUPER GIANTS</h2>
             </div>
-            <h2>FALCONS</h2>
-          </div>
-          <div style={{ backgroundColor: "#60241B" }} className="Team-box">
-            <div
-              style={{ backgroundColor: "#77C7F2" }}
-              className="bgbox secImg"
-            >
-              <img className="hurricanes-logo" src={titans} alt="TITANS" />
+          </NavLink>
+          <NavLink to="/teams/Super_Kings">
+            <div style={{ backgroundColor: "#021934" }} className="Team-box">
+              <div style={{ backgroundColor: "#ffcb05" }} className="bgbox">
+                <img src={"/assets/teams/Super_Kings.png"} alt="capitals" />
+              </div>
+              <h2>SUPER KINGS</h2>
             </div>
-            <h2>TITANS</h2>
-          </div>
-          <div style={{ backgroundColor: "#A01F23" }} className="Team-box">
-            <div
-              style={{ backgroundColor: "#E88A19" }}
-              className="bgbox secImg"
-            >
-              <img className="hurricanes-logo" src={strikers} alt="STRIKERS" />
+          </NavLink>
+          <NavLink to="/teams/Titans">
+            <div style={{ backgroundColor: "#242937" }} className="Team-box">
+              <div style={{ backgroundColor: "#77c7f2" }} className="bgbox">
+                <img
+                  style={{ height: "10vw", marginTop: "2vw" }}
+                  src={"/assets/teams/Titans.png"}
+                  alt="capitals"
+                />
+              </div>
+              <h2>TITANS</h2>
             </div>
-            <h2>STRIKERS</h2>
-          </div>
-          <div style={{ backgroundColor: "#19398A" }} className="Team-box">
-            <div style={{ backgroundColor: "#DADADA" }} className="bgbox">
-              <img src={super_kings} alt="SUPER KINGS" />
-            </div>
-            <h2>SUPER KINGS</h2>
-          </div>
-          <div style={{ backgroundColor: "#D3910E" }} className="Team-box">
-            <div style={{ backgroundColor: "#FCFFEB " }} className="bgbox">
-              <img  src={wolves} alt="WOLVES" />
-            </div>
-            <h2>WOLVES 11</h2>
-          </div>
+          </NavLink> */}
         </div>
         {/* End of Teams Details */}
       </div>

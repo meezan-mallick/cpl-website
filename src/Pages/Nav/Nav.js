@@ -1,8 +1,8 @@
 import React from "react";
 import "./Nav.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../Assets/images/nav/logo.png";
+import { Link, NavLink } from "react-router-dom";
+
 import hamburgericon from "../Assets/images/nav/menu.png";
 import vibraniumlogo from "../Assets/images/nav/vibranium.png";
 import closeicon from "../Assets/images/nav/closeicon.png";
@@ -30,28 +30,34 @@ const Nav = () => {
     <>
       <div className="header">
         <div className="logo">
-          <img src={logo} alt="cpl logo" />
+          <img src={"/assets/logo.png"} alt="cpl logo" />
         </div>
 
         <div className="nav-links desktop-menu">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/" end>
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/highestbids">Auction</Link>
+              <NavLink to="/highestbids" end>
+                Auction
+              </NavLink>
             </li>
             <li>
-              <Link to="/teams">Teams</Link>
+              <NavLink to="/teams">Teams</NavLink>
             </li>
             <li>
-              <Link to="/">Schedules</Link>
+              <NavLink to="/schedules" end>
+                Schedules
+              </NavLink>
             </li>
             <li>
-              <Link to="/">Contact</Link>
+              <NavLink to="/">Contact</NavLink>
             </li>
             <li>
-              <Link to="/">Sponsors</Link>
+              <NavLink to="/sponsors">Sponsors</NavLink>
             </li>
             <li></li>
           </ul>
@@ -77,19 +83,21 @@ const Nav = () => {
           </div>
           <ul>
             <li onClick={closeHamburger}>
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li onClick={closeHamburger}>
-              <Link to="/auction">Auction</Link>
+              <NavLink to="/auction">Auction</NavLink>
             </li>
             <li onClick={closeHamburger}>
-              <Link to="/teams">Teams</Link>
+              <NavLink to="/teams">Teams</NavLink>
             </li>
             <li onClick={closeHamburger}>
-              <Link to="/">Dashboard</Link>
+              <NavLink to="/schedules" end>
+                Schedules
+              </NavLink>
             </li>
             <li onClick={closeHamburger}>
-              <Link to="/">Contact</Link>
+              <NavLink to="/">Contact</NavLink>
             </li>
           </ul>
         </div>

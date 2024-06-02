@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Footer.css";
-import gu from "../Assets/images/footer/gu.png";
 import instagram from "../Assets/images/footer/instagram.png";
 import telegram from "../Assets/images/footer/telegram.png";
 import twitter from "./../Assets/images/footer/twitter.png";
@@ -16,19 +14,18 @@ const Footer = () => {
         <div className="footer-wrapper">
           <div className="address">
             <div>
-              <img src={gu} alt="guaim" className="guaim-img" />
+              <img src={"/assets/logo.png"} alt="guaim" className="guaim-img" />
             </div>
 
             <h4>Department of Animation & IT</h4>
             <p>
-              3rd Floor, New Building, Opp. EMRC, Gujarat University,
-              Navrangpura, Ahmedabad, Gujarat,India - 380009
+              New Building, Opp. EMRC, Gujarat University, Navrangpura,
+              Ahmedabad, Gujarat,India - 380009
               <br />
-              Call: +91 9978067641
             </p>
           </div>
           <div className="all-links">
-            <h1>Useful Links</h1>
+            <h2>Useful Links</h2>
             <div className="link-add">
               <div className="l1">
                 <a href="/home">Home</a>
@@ -41,7 +38,7 @@ const Footer = () => {
               <div className="l2">
                 <a href="/">Players</a>
                 <a href="/">Photo Gallery</a>
-                <a href="/">About CPL</a>
+                <a href="/">About GUPL</a>
                 <a href="/">Sponsors</a>
                 <a href="/">contact Us</a>
                 <a href="/">Previous Results</a>
@@ -50,9 +47,9 @@ const Footer = () => {
           </div>
           <div className="social-media">
             <div className="l3">
-              <h1>
+              <h2>
                 <b>Follow Us</b>
-              </h1>
+              </h2>
 
               <div className="social-btns">
                 <button>
@@ -79,7 +76,7 @@ const Footer = () => {
         </div>
         <div className="copy-right">
           <p>
-            Copyright © CPL {new Date().getFullYear()} All Rights Reserved. |
+            Copyright © GUPL {new Date().getFullYear()} All Rights Reserved. |
             Developed by Meezan Mallick
           </p>
         </div>

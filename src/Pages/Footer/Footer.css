@@ -5,6 +5,9 @@
     overflow-x: hidden !important; /* Add this line to hide horizontal overflow */
     overflow-y: hidden !important; /* Add this line to hide horizontal overflow */
 }
+.guaim-img{
+    margin-left: -2vw;
+}
 
 
 .footer-wrapper{

@@ -1,0 +1,17 @@
+
+#fixture_desktop{
+    display: block;
+}
+#fixture_mobile{
+    display: none;
+}
+
+@media (max-width: 900px) {
+    #fixture_desktop {
+        display: none;
+    }
+    
+    #fixture_mobile {
+        display: block;
+    }
+}

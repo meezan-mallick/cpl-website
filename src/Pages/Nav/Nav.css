@@ -9,6 +9,9 @@
    
 }
 
+
+
+
 .header ul{
     list-style: none;
     display: flex;
@@ -20,8 +23,13 @@
     text-decoration: none;
     color: white;
     font-size: 1.3vw;
+    opacity: .6;
 }
 
+.active{
+    font-weight: bold;
+    opacity:1 !important;
+}
 .logo img{
     height: 5vw;
 }

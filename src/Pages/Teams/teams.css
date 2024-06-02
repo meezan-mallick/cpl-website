@@ -44,80 +44,25 @@
 
 }
 
-.Team-box {
-
-    height: 50vh;
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 2vw 0px;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: green;
+.teams img{
+    height: 24vw;
+    margin: 10px;
+    transition: .4s;
+}
+.teams img:hover{
+    filter: drop-shadow(0em 0em 1.2em rgba(0, 180, 200, 0.458));
+    transform: scale(1.01,1.01);
 }
 
-.bgbox {
-    width: 20vw;
-    height: 250px;
-    background-color: rgb(234, 0, 0);
-    align-items: center;
-    text-align: center;
-    margin-top: -30%;
-    border-radius: 0 0 50% 50%;
-}
 
-.Team-box img {
-    height: 8vw;
-    margin-top: 70px;
-
-}
-.Team-box h2{
-    margin-top: 50px;
-}
 
 @media (max-width:900px) {
-    .bgbox img{
-        width: 10em;
-        height: 10em;
+    .teams{
+        display: flex;
+        flex-wrap: wrap;
     }
    
-
-    .Team-box{
-        width: 130px;
-        height: 30vh;
-    }
-    .Team-box img {
-        height: 30vw;
-        margin-top: 30px;
-
-    }
-
-    .Team-box h2 {
-        margin-top: 30px;
-        font-size: 5vw;
-    }
-
-    .bgbox {
-        width: 150px;
-        height: 150px;
-        background-color: rgb(234, 0, 0);
-        align-items: center;
-        text-align: center;
-        margin-top: -40%;
-        border-radius: 0 0 50% 50%;
-    }
-
-    .hurricanes-logo{
-       height: 20vw !important;
-       width: auto !important;
-    margin-top: 50px !important;
-    }
-    .panther-logo{
-       height: 12vw !important;
-       width: auto !important;
-    margin-top: 60px !important;
+    .teams img {
+        height: 45vw;
     }
 }
